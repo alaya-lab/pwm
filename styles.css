@@ -11,10 +11,10 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* every clip is silent — hide the volume controls the browser still draws */
-video::-webkit-media-controls-mute-button,
-video::-webkit-media-controls-volume-slider,
-video::-webkit-media-controls-volume-slider-container {
+/* result clips are silent — hide their volume controls (the hero demo has music) */
+video:not(.hero-video)::-webkit-media-controls-mute-button,
+video:not(.hero-video)::-webkit-media-controls-volume-slider,
+video:not(.hero-video)::-webkit-media-controls-volume-slider-container {
   display: none !important;
 }
 
